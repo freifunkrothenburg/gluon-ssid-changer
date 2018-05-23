@@ -4,7 +4,7 @@
 check=$(batctl gwl -H|grep -v "gateways in range"|wc -l)
 name=$(uci get system.@system[0].hostname|tail -c 21)
 offline="FF_OFFLINE_"
-default="freiburg.freifunk.net"
+default="rothenburg.freifunk.net"
 offi=$offline$name
 
 if [ $check -eq 0 ] ; then
